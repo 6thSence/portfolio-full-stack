@@ -1,0 +1,23 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6thSence/portfolio-full-stack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6thSence/portfolio-full-stack/issues"
+  },
+  "homepage": "https://github.com/6thSence/portfolio-full-stack#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "postcss": "^5.0.19"
+  }
+}
