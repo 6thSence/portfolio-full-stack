@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="./bundel.min.css">
 </header>
 <body>
-hi, im compiled body!
-and now im recompiled
+    <div class="button-login__wrap">
+        <a href="#" class="button-login">Авторизоваться</a>
+    </div>
+    <div class="content">
+        <div class="auth">
+            <div class="auth__photo"></div>
+            <div class="auth__name">{{ logIn.name }}</div>
+            <div class="auth__disc">{{ logIn.disc }}</div>
+            <div class="auth__socials">
+                <a class="auth__social _vk"></a>
+                <a class="auth__social _gh"></a>
+                <a class="auth__social _in"></a>
+            </div>
+            <nav class="auth__nav">
+                <a href="#" class="auth__link">Мои работы</a>
+                <a href="#" class="auth__link">Обо мне</a>
+                <a href="#" class="auth__link">Блог</a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

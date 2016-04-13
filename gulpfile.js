@@ -10,7 +10,7 @@ const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
 
 
-gulp.task('default', ['compile', 'styles', 'browser-sync']);
+gulp.task('default', ['compile', 'styles', 'browser-sync', 'assets']);
 
 gulp.task('compile', () => {
 	options = {
@@ -39,8 +39,14 @@ gulp.task('styles', () => {
 		.pipe(gulp.dest('./static/'));
 });
 
+gulp.task('assets', () => {
+	gulp.src(['./login/assets/**.*', '!*.svg'])
+		.pipe(gulp.dest('./static/assets'));
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init({
+    	open: false,
         server: {
             baseDir: "./static/"
         }
