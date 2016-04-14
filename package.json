@@ -17,7 +17,16 @@
   },
   "homepage": "https://github.com/6thSence/portfolio-full-stack#readme",
   "dependencies": {
+    "browser-sync": "^2.12.3",
+    "cssnano": "^3.5.2",
     "gulp": "^3.9.1",
-    "postcss": "^5.0.19"
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "postcss-assets": "^4.0.1",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-short": "^1.4.0"
+  },
+  "devDependencies": {
+    "gulp-compile-handlebars": "^0.6.1"
   }
 }
