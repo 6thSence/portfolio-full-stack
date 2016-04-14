@@ -9,17 +9,21 @@ const cssnext = require('postcss-cssnext');
 const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
 
-
-gulp.task('default', ['compile', 'styles', 'browser-sync', 'assets']);
+gulp.task('default', ['compile',
+	'styles',
+	'browser-sync',
+	'assets',
+	'fonts'
+]);
 
 gulp.task('compile', () => {
 	options = {
-		batch : ['./login/partials']
+		batch : ['./src/partials']
 		}
 
-	return gulp.src('login/*.hbs')
+	return gulp.src('src/logIn/*.hbs')
 		.pipe(handlebars(templateData, options))
-		.pipe(rename('login.html'))
+		.pipe(rename('logIn.html'))
 		.pipe(gulp.dest('./static'));
 });
 
@@ -33,14 +37,14 @@ gulp.task('styles', () => {
 		cssnano
 	]
 
-	return gulp.src('./login/**/*.css')
+	return gulp.src('./src/**/*.css')
 		.pipe(postcss(processors))
 		.pipe(rename('bundel.min.css'))
 		.pipe(gulp.dest('./static/'));
 });
 
 gulp.task('assets', () => {
-	gulp.src(['./login/assets/**.*', '!*.svg'])
+	gulp.src(['./src/logIn/assets/**.*', '!*.svg'])
 		.pipe(gulp.dest('./static/assets'));
 });
 
@@ -53,7 +57,11 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('fonts', () => {
+	gulp.src('./src/fonts/**/*')
+		.pipe(gulp.dest('./static/fonts/'))
+});
 
-gulp.watch('./login/**/*').on('change', browserSync.reload);
-gulp.watch('./login/**/*.css').on('change', () => { gulp.run('styles'); });
-gulp.watch('./login/**/*.hbs').on('change', () => { gulp.run('compile'); });
+gulp.watch('./src/**/*').on('change', browserSync.reload);
+gulp.watch('./src/**/*.css').on('change', () => { gulp.run('styles'); });
+gulp.watch('./src/**/*.hbs').on('change', () => { gulp.run('compile'); });
