@@ -8,12 +8,15 @@ const short = require('postcss-short');
 const cssnext = require('postcss-cssnext');
 const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
+const concat = require('gulp-concat');
+const reporter = require('postcss-browser-reporter');
 
 gulp.task('default', ['compile',
 	'styles',
 	'browser-sync',
 	'assets',
-	'fonts'
+	'fonts',
+	'scripts'
 ]);
 
 gulp.task('compile', () => {
@@ -21,9 +24,24 @@ gulp.task('compile', () => {
 		batch : ['./src/partials']
 		}
 
-	return gulp.src('src/logIn/*.hbs')
+	gulp.src('src/logIn/*.hbs')
 		.pipe(handlebars(templateData, options))
 		.pipe(rename('logIn.html'))
+		.pipe(gulp.dest('./static'));
+
+	gulp.src('src/blog/*.hbs')
+		.pipe(handlebars(templateData, options))
+		.pipe(rename('blog.html'))
+		.pipe(gulp.dest('./static'));
+
+	gulp.src('src/aboutMe/*.hbs')
+		.pipe(handlebars(templateData, options))
+		.pipe(rename('aboutMe.html'))
+		.pipe(gulp.dest('./static'));
+
+	gulp.src('src/works/*.hbs')
+		.pipe(handlebars(templateData, options))
+		.pipe(rename('works.html'))
 		.pipe(gulp.dest('./static'));
 });
 
@@ -34,17 +52,22 @@ gulp.task('styles', () => {
 		}),
 		short,
 		assets,
-		cssnano
+		cssnano,
+		reporter
 	]
 
-	return gulp.src('./src/**/*.css')
+	return gulp.src('./src/**/*/*.css')
 		.pipe(postcss(processors))
-		.pipe(rename('bundel.min.css'))
+		.pipe(concat('bundel.min.css'))
 		.pipe(gulp.dest('./static/'));
 });
 
 gulp.task('assets', () => {
-	gulp.src(['./src/logIn/assets/**.*', '!*.svg'])
+	return gulp.src(['./src/logIn/assets/**.*',
+	 './src/blog/assets/**.*',
+	 './src/aboutMe/assets/**.*',
+	 './src/works/assets/**.*',
+	 '!./src/**/*.svg'])
 		.pipe(gulp.dest('./static/assets'));
 });
 
@@ -57,11 +80,18 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('scripts', () => {
+	return gulp.src('src/**/*.js')
+		.pipe(concat('scripts.js'))
+		.pipe(gulp.dest('./static'));
+});
+
 gulp.task('fonts', () => {
-	gulp.src('./src/fonts/**/*')
-		.pipe(gulp.dest('./static/fonts/'))
+	return gulp.src('./src/fonts/**/*')
+		.pipe(gulp.dest('./static/fonts/'));
 });
 
 gulp.watch('./src/**/*').on('change', browserSync.reload);
 gulp.watch('./src/**/*.css').on('change', () => { gulp.run('styles'); });
 gulp.watch('./src/**/*.hbs').on('change', () => { gulp.run('compile'); });
+gulp.watch('./src/**/*.js').on('change', () => { gulp.run('scripts'); });

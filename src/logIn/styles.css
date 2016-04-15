@@ -1,12 +1,9 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+.login-loyout {
     background: url('assets/background.png') top center no-repeat;
     background-size: size('./assets/background.png', 3);
     }
 
-.wrap {
+.login-wrap {
     min-height: 100%;
 
         &:after {
@@ -16,7 +13,7 @@ html, body {
             }
     }
 
-.content {
+.login-content {
     position: relative;
     margin: 0 auto 60px;
     min-height: 460px;
@@ -172,7 +169,7 @@ html, body {
                 }
             }
 
-.footer {
+.login-footer {
     margin: -60px 0 0;
     width: 100%;
     color: #fff;

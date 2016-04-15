@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Блог</title>
+    <link rel="stylesheet" href="./bundel.min.css">
+</head>
+<body>
+    <div class="blog-wrap">
+        <header class="blog__header">
+            <div class="blog__header-socials">
+                <div class="blog__header-social _vk"></div>
+                <div class="blog__header-social _gh"></div>
+                <div class="blog__header-social _in"></div>
+            </div>
+            <div class="blog__header-button" id="blog__button">
+                <div class="blog__header-el"></div>
+                <div class="blog__header-el"></div>
+                <div class="blog__header-el"></div>
+            </div>
+        </header>
+        <div class="blog-content">
+            <div class="blog__posts-wrap">
+                {{> post dataTop="0px"}}
+                {{> post dataTop="800px"}}
+                {{> post dataTop="1600px"}}
+                {{> post dataTop="2400px"}}
+            </div>
+            <aside class="blog__sidebar">
+                <div class="blog__sidebar-info">
+                    <div class="blog__sidebar-photo">
+                        <img src="./assets/photo.png" alt="">
+                    </div>
+                    <div class="blog__sidebar-title"><span class="blog__link-text">Блог</span></div>
+                    <div class="blog__sidebar-disc">Статьи, которые я написал</div>
+                </div>
+                <div class="blog__posts-name">
+                    <a class="blog__post-name _active" data-top="">Самое важное в Sass</a>
+                    <a class="blog__post-name" data-top="">Приемы в верске, без которых не обходится ни один сайт</a>
+                    <a class="blog__post-name" data-top="">Самый необходимый набор плагинов Gulp</a>
+                    <a class="blog__post-name" data-top="">Почему я выбрал Jade</a>
+                </div>
+            </aside>
+        </div>
+        <div class="blog__fullscreen" id="blog__menu">
+            <div class="blog__fullscreen-list">
+                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Мои работы</span></a>
+                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Блог</span></a>
+                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Обо мне</span></a>
+                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Авторизация</span></a>
+            </div>
+        </div>
+    </div>
+    <footer class="blog__footer">
+        <div class="blog__footer-copyright">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+        <div class="blog__footer-socials">
+            <a class="blog__footer-social _vk"></a>
+            <a class="blog__footer-social _gh"></a>
+            <a class="blog__footer-social _in"></a>
+        </div>
+    </footer>
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
