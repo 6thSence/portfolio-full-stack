@@ -5,7 +5,14 @@
     <title>Мои работы</title>
     <link rel="stylesheet" href="bundel.min.css">
 </head>
-<body>
-hi, im works
+<body class="about__layout">
+
+    {{> portfolioHeader addClass=portfolio.work}}
+    <div class="about__content">
+
+    </div>
+    {{> portfolioFooter addClass=footer.work}}
+
+    <script src="./scripts.js"></script>
 </body>
 </html>

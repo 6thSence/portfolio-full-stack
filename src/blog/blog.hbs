@@ -7,18 +7,7 @@
 </head>
 <body>
     <div class="blog-wrap">
-        <header class="blog__header">
-            <div class="blog__header-socials">
-                <div class="blog__header-social _vk"></div>
-                <div class="blog__header-social _gh"></div>
-                <div class="blog__header-social _in"></div>
-            </div>
-            <div class="blog__header-button" id="blog__button">
-                <div class="blog__header-el"></div>
-                <div class="blog__header-el"></div>
-                <div class="blog__header-el"></div>
-            </div>
-        </header>
+        {{> header addClass=portfolio.blog}}
         <div class="blog-content">
             <div class="blog__posts-wrap">
                 {{> post dataTop="0px"}}
@@ -42,23 +31,10 @@
                 </div>
             </aside>
         </div>
-        <div class="blog__fullscreen" id="blog__menu">
-            <div class="blog__fullscreen-list">
-                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Мои работы</span></a>
-                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Блог</span></a>
-                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Обо мне</span></a>
-                <a href="#" class="blog__fullscreen-item"><span class="blog__link-text">Авторизация</span></a>
-            </div>
-        </div>
     </div>
-    <footer class="blog__footer">
-        <div class="blog__footer-copyright">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
-        <div class="blog__footer-socials">
-            <a class="blog__footer-social _vk"></a>
-            <a class="blog__footer-social _gh"></a>
-            <a class="blog__footer-social _in"></a>
-        </div>
-    </footer>
+
+    {{> footer addClass=footer.blog}}
+
     <script src="./scripts.js"></script>
 </body>
 </html>

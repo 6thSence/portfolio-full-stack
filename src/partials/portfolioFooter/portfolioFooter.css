@@ -1,0 +1,39 @@
+.portfolio__footer-wrap {
+    position: relative;
+    margin: -220px 0 0;
+
+    &._work .portfolio__footer-button {
+        cursor: pointer;
+        z-index: 1;
+        display: inline-block;
+        content: '';
+        position: absolute 80px 50% * *;
+        transform: translateX(50%) rotate(180deg);
+        height: height('assets/arrow.svg');
+        background: inline('assets/arrow.svg') center no-repeat;
+        width: width('assets/arrow.svg');
+        opacity: .8;
+        }
+    }
+
+    .portfolio__footer-button {
+        display: none;
+        }
+
+    .portfolio__footer-up {
+        position: relative;
+        overflow: hidden;
+        height: 160px;
+
+        &:after {
+            position: absolute 0 50% * *;
+            display: block;
+            margin: 0 0 -160px;
+            border-top: solid 160px transparent;
+            border-right: solid 900px rgba(0, 0, 0, .5);
+            border-bottom: solid 160px transparent;
+            border-left: solid 900px rgba(0, 0, 0, .5);
+            content: '';
+            transform: translateX(50%);
+            }
+    }

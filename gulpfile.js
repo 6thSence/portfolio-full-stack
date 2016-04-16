@@ -10,6 +10,7 @@ const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const reporter = require('postcss-browser-reporter');
+const babel = require('gulp-babel');
 
 gulp.task('default', ['compile',
 	'styles',
@@ -21,7 +22,18 @@ gulp.task('default', ['compile',
 
 gulp.task('compile', () => {
 	options = {
-		batch : ['./src/partials']
+		batch : ['./src/partials/footer',
+			'./src/partials/portfolioFooter',
+			'./src/partials/portfolioHeader',
+			'./src/partials/header',
+			'./src/partials/post',
+			'./src/partials/whatICan__graf'
+			],
+		helpers: {
+			toCircleLen: (precent) => {
+				return (precent*314/100);
+				}
+			}
 		}
 
 	gulp.src('src/logIn/*.hbs')
@@ -83,6 +95,9 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', () => {
 	return gulp.src('src/**/*.js')
 		.pipe(concat('scripts.js'))
+		.pipe(babel({
+        			presets: ['es2015']
+        		}))
 		.pipe(gulp.dest('./static'));
 });
 

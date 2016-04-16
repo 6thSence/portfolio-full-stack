@@ -1,0 +1,34 @@
+.circle-wrap {
+    position: relative;
+    margin: 0 40px 0 0;
+    display: inline-block;
+    }
+
+    .circle {
+        display: inline-block;
+        size: 120px;
+        }
+
+    circle {
+        fill: rgba(0,0,0,0);
+        stroke: #dfdcd5;
+        stroke-width: 20;
+        stroke-dasharray: 314px 314px;
+        }
+
+    circle:nth-child(2n) {
+        fill: rgba(0,0,0,0);
+        stroke: #10c1a8;
+        stroke-width: 20;
+        }
+
+    .circle__text {
+        position: absolute 50% * * 50%;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+        font-family: 'Roboto-Regular';
+        color: #10c1a8;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        }

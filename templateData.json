@@ -2,5 +2,70 @@
 	"logIn" : {
 		"name": "Владимир Астахов",
 		"disc": "Личный сайт вебразработчика"
-	}
+	},
+	"portfolio": {
+		"work": "_work",
+		"blog": "_blog"
+	},
+	"footer": {
+		"blog": "_blog",
+		"work": "_work"
+	},
+	"skillsGroup": [
+		{
+			"groupName": "Frontend",
+			"skills": [
+				{
+					"skillName": "HTML5",
+					"percent": "90"
+				},
+				{
+					"skillName": "CSS3",
+					"percent": "80"
+				},
+				{
+					"skillName": "Java Script & jQuery",
+					"percent": "80"
+				}
+			]
+		},
+		{
+			"groupName": "Backend",
+			"skills": [
+				{
+					"skillName": "PHP",
+					"percent": "45"
+				},
+				{
+					"skillName": "mySQL",
+					"percent": "60"
+				},
+				{
+					"skillName": "Node.js & npm",
+					"percent": "35"
+				},
+				{
+					"skillName": "Mongo.db",
+					"percent": "75"
+				}
+			]
+		},
+		{
+			"groupName": "WorkFlow",
+			"skills": [
+				{
+					"skillName": "Git",
+					"percent": "90"
+				},
+				{
+					"skillName": "Gulp",
+					"percent": "70"
+				},
+				{
+					"skillName": "Bower",
+					"percent": "60"
+				}
+			]
+		}
+	]
 }

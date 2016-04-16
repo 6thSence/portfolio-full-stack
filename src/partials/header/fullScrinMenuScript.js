@@ -1,6 +1,6 @@
 var showFullScreenMenu = function () {
-    const button = document.getElementById('blog__button');
-    const menu = document.getElementById('blog__menu');
+    const button = document.getElementById('header-button');
+    const menu = document.getElementById('fullscreen-menu');
 
     var _openMenu = function () {
         button.classList.toggle('_clicked');

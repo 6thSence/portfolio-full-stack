@@ -1,7 +1,7 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 0, lng: 0},
-        zoom: 3,
+        center: {lat: 55.01, lng: 82.91},
+        zoom: 15,
         styles: [
             {
                 "featureType": "administrative",
@@ -84,8 +84,11 @@ function initMap() {
         ],
         disableDoubleClickZoom: false,
         mapTypeControl: false,
-        panControl: false,
         rotateControl: false,
-        scrollwheel: false
+        scrollwheel: false,
+        disableDefaultUI: false,
+        fullscreenControl: false,
+        zoomControl: false,
+        streetViewControl: false
     });
 }

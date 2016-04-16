@@ -6,33 +6,61 @@
     <link rel="stylesheet" href="bundel.min.css">
 </head>
 <body class="about__layout">
-    <div class="portfolio-header">
-        <div class="portfolio-person">
-            <div class="portfolio__photo-wrap">
-                <img class="portfolio__photo" src="assets/photo.png" alt="">
-            </div>
-            <div class="portfolio__info">
-                <div class="portfolio__info-name">{{ logIn.name }}</div>
-                <div class="portfolio__info-disc">{{ logIn.disc }}</div>
-            </div>
-        </div>
-    </div>
+
+    {{> portfolioHeader addClass=portfolio.aboutMe}}
+
     <div class="about__content">
 
+        <div class="about__content-block">
+            <h1 class="about__profile-title"><span class="_styling">Обо мне</span></h1>
+            <div class="about__profile">
+                <div class="about__photo-wrap">
+                    <img src="./assets/aboutMePhoto.png" alt="" class="about__photo">
+                </div>
+                <h3 class="about__title-disc"><span class="_styling">Кто я</span></h3>
+                <div class="about__profile-disc">
+                    <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+                    <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__content-block">
+            <h2 class="whatICan__title">Чем я могу быть вам&nbspполезен</h2>
+            <div class="whatICan__disc">
+                Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+            </div>
+            {{#each skillsGroup}}
+                <div class="whatICan__row">
+                    <h3 class="whatICan__row-title">{{groupName}}</h3>
+                    <div class="whatICan__list">
+                        {{#each skills}}
+                            {{> whatICan__graf skillName=skillName percent=percent}}
+                        {{/each}}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
     </div>
 
-    <div class="map" id="map"></div>
-
-    <div class="portfolio__footer-wrap">
-        <div class="portfolio__footer-up"></div>
-        <div class="portfolio__footer"></div>
+    <div class="contacts-wrap">
+        <div class="map" id="map"></div>
+        <div class="contacts">
+            <h2 class="contacts__title-wrap"><span class="contacts__title">Контакты</span></h2>
+            <ul class="contacts__list">
+                <a href="skype:skype_kdn" class="contacts__link"><li class="contacts__item _skype">skype_kdn</li></a>
+                <a href="mailto:astahov@gmail.com" class="contacts__link"><li class="contacts__item _mail">astahov@gmail.com</li></a>
+                <a href="tel:+79132009324" class="contacts__link"><li class="contacts__item _phone">+7 913 200 93 24</li></a>
+            </ul>
+        </div>
     </div>
+
+    {{> portfolioFooter}}
 
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAAj8lyB8TWsy1ieWg1oKwLz862ZxnBDw
         &libraries=visualization&callback=initMap">
     </script>
     <script src="./scripts.js"></script>
-
 </body>
 </html>

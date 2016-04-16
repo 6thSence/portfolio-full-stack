@@ -1,0 +1,163 @@
+.header {
+    position: absolute 0 0 * 0;
+    box-sizing: border-box;
+    padding: 25px 20px 0;
+    size: 100% 92px;
+
+    &._blog {
+        background: linear-gradient(to right, #84aead 0%, #81aaab 25%, #7aa8ab 50%, #639fa4 100%);
+        }
+
+    &:after {
+        display: blog;
+        clear: both;
+        content: '';
+        }
+    }
+
+    .header-socials {
+        float: left;
+        margin: 0 -20px 0 0;
+        }
+
+    .header-social {
+        display: inline-block;
+        margin: 0 20px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: background ease-in .1s;
+
+        &._vk {
+            width: width('assets/vk_header.svg');
+            height: height('assets/vk_header.svg');
+            background: inline('assets/vk_header.svg') center no-repeat;
+            background-size: size('assets/vk_header.svg');
+
+            &:hover {
+                background: inline('assets/vk_header-hover.svg') center no-repeat;
+                background-size: size('assets/vk_header.svg');
+                }
+        }
+
+        &._gh {
+            width: width('assets/gh_header.svg');
+            height: height('assets/gh_header.svg');
+            background: inline('assets/gh_header.svg') center no-repeat;
+            background-size: size('assets/gh_header.svg');
+
+            &:hover {
+                background: inline('assets/gh_header-hover.svg') center no-repeat;
+                background-size: size('assets/gh_header.svg');
+                }
+        }
+
+        &._in {
+            width: width('assets/in_header.svg');
+            height: height('assets/in_header.svg');
+            background: inline('assets/in_header.svg') center no-repeat;
+            background-size: size('assets/in_header.svg');
+
+            &:hover {
+                background: inline('assets/in_header-hover.svg') center no-repeat;
+                background-size: size('assets/in_header.svg');
+                }
+            }
+    }
+
+    .header-button {
+        float: right;
+        margin: 0 0 -10px;
+        cursor: pointer;
+        size: 40px;
+        transition: transform ease-in .2s;
+
+        &._clicked {
+            position: fixed 25px 10px * *;
+            z-index: 5;
+            transform: translateX(5px);
+            }
+
+        &._clicked .header-el {
+
+            &:first-child {
+                transform: rotate(45deg) translateY(21px) ;
+                }
+            &:nth-child(2n) {
+                opacity: 0;
+                transform: rotate(-45deg) translateY(-5px);
+                }
+            &:last-child {
+                transform: rotate(-45deg) translateY(-21px);
+                }
+            }
+
+        &:hover {
+            opacity: .8;
+            }
+        }
+
+    .header-el {
+        margin: 0 0 10px;
+        border-radius: 2px;
+        background: #fff;
+        transition: transform ease-in .5s, opacity ease-in .2s;
+        size: 100% 5px;
+        }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+            }
+        to {
+            opacity: 1;
+            }
+        }
+
+    .fullscreen {
+        display: none;
+        animation: show .3s ease-in;
+        }
+
+    .fullscreen._showen {
+        position: fixed 0;
+        z-index: 1;
+        display: block;
+        background: rgba(33, 199, 177, .9);
+        }
+
+    .fullscreen-list {
+        margin: auto;
+        padding: 80px 0 0;
+        width: 420px;
+        text-align: center;
+        }
+
+    .fullscreen-item {
+        display: block;
+        margin: 0 0 80px 0;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 46px;
+        font-family: 'BERNIER Regular';
+        }
+
+    .link-text {
+        position: relative;
+
+        &:before {
+            position: absolute 50% * * -40px;
+            display: block;
+            background: #4dd2c1;
+            content: '';
+            size: 25px 5px;
+            }
+
+        &:after {
+            position: absolute 50% -40px * *;
+            display: block;
+            background: #4dd2c1;
+            content: '';
+            size: 25px 5px;
+            }
+        }
