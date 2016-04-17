@@ -8,8 +8,80 @@
 <body>
 
     {{> portfolioHeader addClass=portfolio.work}}
+    <h2 class="works__title _works"><span class="_styling">Мои работы</span></h2>
 
-    <div class="say"></div>
+    <section class="examples">
+        <div class="examples__block">
+            <div class="examples__item">
+                <h3 class="examples__item-title"><span class="_styling">Сайт школы онлайн образования</span></h3>
+                <div class="examples__item-dis">Html, Css, Java Script</div>
+                <a href="#" class="examples__link">Перейти на сайт</a>
+            </div>
+        </div>
+        <div class="examples__block">
+
+            <div class="examples__main-photo-wrap" style="background-image: url('./assets/siteSchool.png')">
+                <img class="img-disebale" alt="Сайт школы онлайн образования">
+            </div>
+
+            <div class="examples__min-photos">
+                <div class="examples__min-photo _last" style="background-image: url('./assets/siteYoga_min.png')">
+                    <img class="img-disebale" alt="Сайт студии йоги">
+                </div>
+                <div class="examples__min-photo _next" style="background-image: url('./assets/siteSofa_min.png')">
+                    <img class="img-disebale" alt="Сайт студии разработки интерьера">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="say">
+        <h2 class="works__title _about"><span class="_styling">Что обо мне говорят</span></h2>
+        <div class="say__peopls-wrap">
+            <div class="say__peopls-list">
+
+                <div class="say__people">
+                    <div class="say__text">
+                        Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    </div>
+                    <div class="say__person">
+                        <div class="say__person-photo" style="background-image: url('./assets/dima.png')"></div>
+                        <div class="say___person-info">
+                            <div class="say__person-name">Ковальчук Дмитрий</div>
+                            <div class="say__person-disc">основатель Loftschool</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="say__people">
+                    <div class="say__text">
+                        Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    </div>
+                    <div class="say__person">
+                        <div class="say__person-photo" style="background-image: url('./assets/zar.png')"></div>
+                        <div class="say___person-info">
+                            <div class="say__person-name">Зар Захаров</div>
+                            <div class="say__person-disc">Главный преподаватель</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-me">
+                <h3 class="contact-me__title"><span class="_styling">Связаться со мной</span></h3>
+                <form action="" class="contact-me__form">
+                    <input type="text" class="contact-me__input _name" name="name" placeholder="Имя">
+                    <input type="text" class="contact-me__input _email" name="email" placeholder="Email">
+                    <textarea class="contact-me__input _textarea" name="disc" placeholder="Ваше сообщение"></textarea>
+                    <div class="contact-me__butttons">
+                        <a href="#" class="contant-me__button">Отправить</a>
+                        <a href="#" class="contant-me__button">Очистить</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     {{> portfolioFooter addClass=footer.work}}
 
