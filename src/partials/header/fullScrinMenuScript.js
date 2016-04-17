@@ -16,4 +16,4 @@ var showFullScreenMenu = function () {
     }
 }();
 
-showFullScreenMenu.init();
+document.getElementById('header-button') && showFullScreenMenu.init();

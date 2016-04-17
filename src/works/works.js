@@ -29,4 +29,4 @@ const scrollTop = function () {
     }
 }();
 
-scrollTop.init();
+document.getElementById('button-scroll-top') && scrollTop.init();

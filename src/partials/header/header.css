@@ -5,6 +5,8 @@
     size: 100% 92px;
 
     &._blog {
+        z-index: 1;
+        position: fixed 0 0 *;
         background: linear-gradient(to right, #84aead 0%, #81aaab 25%, #7aa8ab 50%, #639fa4 100%);
         }
 

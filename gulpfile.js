@@ -94,10 +94,10 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', () => {
 	return gulp.src('src/**/*.js')
-		.pipe(concat('scripts.js'))
 		.pipe(babel({
         			presets: ['es2015']
         		}))
+		.pipe(concat('scripts.js'))
 		.pipe(gulp.dest('./static'));
 });
 

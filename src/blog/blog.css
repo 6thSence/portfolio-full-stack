@@ -13,8 +13,6 @@
     .blog__posts-wrap {
         padding: 0 390px 0 0;
         min-width: 800px;
-        max-height: 1200px;
-        overflow-y: scroll;
         background: #fff;
         min-height: 400px;
         }
@@ -49,7 +47,7 @@
                     }
 
     .blog__sidebar {
-        padding: 135px 0 20px 0;
+        padding: 135px 0 0;
         box-sizing: border-box;
         position: absolute 0 0 110px *;
         background: #00bfa5;
@@ -80,6 +78,16 @@
                 font-family: 'BERNIER Regular';
                 }
 
+        .blog__posts-name {
+            &._fixed {
+                width: 390px;
+                position: fixed 92px 0 * *;
+                }
+
+             &._fixBottom {
+                position: absolute * 0 0 0;
+                  }
+            }
         .blog__post-name {
             padding: 30px 0;
             display: block;
