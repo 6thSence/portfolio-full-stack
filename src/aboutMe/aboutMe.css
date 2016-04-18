@@ -1,42 +1,32 @@
 .about__content {
-    background: linear-gradient(to right, #efeee9 0%, #efeee9 50%, #eeebdf 50%, #eeebdf 100%);
-
-    &:after {
-        display: block;
-        content: '';
-        clear: both;
-        }
+    background: linear-gradient(to right, #efeee9 50%, #eeebdf 50%);
+    display: flex;
     }
 
     .about__content-block {
-        float: left;
-        width: 50%;
+        flex: 1 2px;
 
         &:first-child {
             position: relative;
             }
-
         &:last-child {
             padding: 0 35px;
-            box-sizing: border-box;
+             flex: .9;
             }
         }
 
         .about__profile-title {
             position: absolute -80px * * 20px;
+            margin: 0;
             background: inline('assets/aboutText.svg') center no-repeat;
             background-size: 100% auto;
-            size: 45% 200px;
             text-align: center;
-            font-size: 63px;
-            font-family: "BERNIER Regular";
+            font: 63px/200px 'BERNIER Regular', Helvetica, Arial;
             color: #373e42;
-            line-height: 200px;
-            margin: 0;
-
+            size: 45% 200px;
             }
 
-            ._styling {
+            .about__profile-title_styling {
                 position: relative;
 
                 &:before, &:after {
@@ -61,7 +51,7 @@
 
             .about__photo-wrap {
                 position: relative;
-                size: 100% 390px;
+                height: 390px;
                 overflow: hidden;
                 }
 
@@ -73,21 +63,18 @@
                 .about__title-disc {
                     text-align: center;
                     color: #455a64;
-                    font-size: 35px;
-                    font-family: 'BERNIER Regular';
+                    font: 35px/1 'BERNIER Regular', Helvetica, Arial;
                     }
                 .about__profile-disc {
                     color: #455a64;
-                    font-size: 16px;
-                    font-family: 'Roboto-Regular';
+                    font: 16px/1 'Roboto-Regular', Helvetica, Arial;
                     }
 
         .whatICan__title {
             width: 220px;
             text-align: center;
             margin: 0 auto 35px;
-            font-size: 35px;
-            font-family: 'BERNIER Regular';
+            font: 35px/1 'BERNIER Regular', Helvetica, Arial;
             color: #455a64;
             position:relative;
 
@@ -97,7 +84,6 @@
                 size: 20px 5px;
                 background: #c9c8c0;
                 }
-
             &:before {
                 position: absolute 15px * * -45px;
                 }
@@ -108,8 +94,7 @@
 
         .whatICan__disc {
             margin: 0 0 60px;
-            font-size: 16px;
-            font-family: 'Roboto-Regular';
+            font: 16px/1 Roboto-Regular, Helvetica, Arial;
             color: #455a64;
             opacity: .8;
             }
@@ -120,8 +105,7 @@
 
             .whatICan__row-title {
                 margin: 0 0 20px;
-                font-family: 'Roboto-Light';
-                font-size: 28px;
+                font: 28px/1 Roboto-Light, Helvetica, Arial;
                 color: #455a64;
                 }
 
@@ -139,10 +123,10 @@
         overflow: hidden;
         padding: 40px;
         box-sizing: border-box;
-        width: 380px;
         border-radius: 10px;
         background: rgba(255, 255, 255, .8);
         transform: translate(50%, -50%);
+        width: 380px;
         }
 
         .contacts__title-wrap {
@@ -153,8 +137,7 @@
             .contacts__title {
                 position: relative;
                 color: #373e42;
-                font-size: 35px;
-                font-family: 'BERNIER Regular';
+                font: 35px/1 'BERNIER Regular', Helvetica, Arial;
 
                 &:before, &:after {
                     content: '';
@@ -191,8 +174,7 @@
 
                 .contacts__item {
                     padding: 0 0 0 30px;
-                    font-size: 16px;
-                    font-family: 'Roboto-Regular';
+                    font: 16px/1 Roboto-Regular, Helvetica, Arial;
 
                         &._skype {
                             min-height: height('assets/skype.svg');
@@ -211,7 +193,7 @@
                             background: inline('assets/phone.svg') 0 50% no-repeat;
                             background-size: size('assets/phone.svg');
                             }
-                    }
+                        }
 
 .map {
     height: 1075px;

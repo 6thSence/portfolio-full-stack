@@ -15,19 +15,21 @@
                 {{> post dataTop="1600px"}}
                 {{> post dataTop="2400px"}}
             </div>
-            <aside class="blog__sidebar">
-                <div class="blog__sidebar-info">
-                    <div class="blog__sidebar-photo">
+            <aside class="sidebar">
+                <div class="sidebar__info">
+                    <div class="sidebar__photo">
                         <img src="./assets/photo.png" alt="">
                     </div>
-                    <div class="blog__sidebar-title"><span class="blog__link-text">Блог</span></div>
-                    <div class="blog__sidebar-disc">Статьи, которые я написал</div>
+                    <div class="sidebar__title-wrap">
+                        <span class="sidebar__title">Блог</span>
+                    </div>
+                    <div class="sidebar__desc">Статьи, которые я написал</div>
                 </div>
-                <div class="blog__posts-name" id="posts-list">
-                    <a class="blog__post-name _active" data-top="">Самое важное в Sass</a>
-                    <a class="blog__post-name" data-top="">Приемы в верске, без которых не обходится ни один сайт</a>
-                    <a class="blog__post-name" data-top="">Самый необходимый набор плагинов Gulp</a>
-                    <a class="blog__post-name" data-top="">Почему я выбрал Jade</a>
+                <div class="sidebar__posts" id="posts-list">
+                    <a class="sidebar__post _active" data-top="">Самое важное в Sass</a>
+                    <a class="sidebar__post" data-top="">Приемы в верске, без которых не обходится ни один сайт</a>
+                    <a class="sidebar__post" data-top="">Самый необходимый набор плагинов Gulp</a>
+                    <a class="sidebar__post" data-top="">Почему я выбрал Jade</a>
                 </div>
             </aside>
         </div>

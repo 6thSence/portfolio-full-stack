@@ -5,7 +5,7 @@
     min-height: 600px;
     box-sizing: border-box;
     background: inline('assets/portfolio.svg') center 150px no-repeat,
-        url('assets/background.jpeg') center top/cover no-repeat;
+        url('assets/background.jpeg') center top no-repeat;
 
 
     &:before {

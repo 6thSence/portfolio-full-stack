@@ -1,0 +1,30 @@
+.post {
+    border-bottom: solid 5px #f1f1f2;
+    margin: 0 0 60px;
+
+    &:last-child {
+        border: 0;
+        }
+    }
+
+    .post__wrap {
+        width: 800px;
+        margin: auto;
+        padding: 70px 0 60px;
+        font: 16px/1 Roboto-Regular, Helvetica, Arial;
+        }
+
+        .post__title {
+            margin: 0 0 25px;
+            color: #455a64;
+            font: 35px/1 'BERNIER Regular', Helvetica, Arial;
+            }
+
+        .post__date {
+            color: #00bfa5;
+            }
+
+        .post__text {
+            margin: 0 0 25px;
+            color: rgba(69, 60, 100, .8);
+            }

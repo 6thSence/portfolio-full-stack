@@ -1,51 +1,50 @@
 .footer {
-    text-align: center;
-    box-sizing: border-box;
     position: relative;
+    box-sizing: border-box;
     height: 60px;
     background: rgba(0, 0, 0, .5);
+    text-align: center;
 
     &._blog {
-        min-width: 1200px;
         margin: -110px 0 0;
-        background: #41484c;
+        min-width: 1200px;
         height: 110px;
+        background: #41484c;
 
-        & .footer-copyright {
+        & .footer__copyright {
             padding: 50px 0 0;
             }
 
-        & .footer-socials {
-            padding: 30px 0 0;
+        & .footer__socials {
             margin: 0 5px 0;
+            padding: 30px 0 0;
             }
         }
     }
 
-    .footer-copyright {
+    .footer__copyright {
         display: inline-block;
-        width: 500px;
-        padding: 20px 0 0;
         box-sizing: border-box;
+        padding: 20px 0 0;
+        width: 500px;
         color: rgba(255, 255, 255, .7);
-        font-size: 15px;
-        font-family: 'Roboto-Light';
+        font: 15px/1 'Roboto-Light', Helvetica, Arial;
         }
 
-    .footer-socials {
+    .footer__socials {
         position: absolute 0 0 * *;
         box-sizing: border-box;
         height: 100%;
         }
 
-        .footer-social {
-            cursor: pointer;
+        .footer__social {
+            display: inline-block;
             margin: 0 20px 0 0;
             border-radius: 50%;
-            size: 50px;
-            display: inline-block;
             opacity: .8;
+            cursor: pointer;
             transition: opacity ease-in .1s;
+            size: 50px;
 
             &._vk {
                 background: #fff inline('assets/vk_footer.svg') center no-repeat;

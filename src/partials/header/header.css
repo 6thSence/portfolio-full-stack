@@ -5,8 +5,8 @@
     size: 100% 92px;
 
     &._blog {
-        z-index: 1;
         position: fixed 0 0 *;
+        z-index: 1;
         background: linear-gradient(to right, #84aead 0%, #81aaab 25%, #7aa8ab 50%, #639fa4 100%);
         }
 
@@ -17,14 +17,14 @@
         }
     }
 
-    .header-socials {
+    .header__socials {
         float: left;
         margin: 0 -20px 0 0;
         }
 
-    .header-social {
+    .header__social {
         display: inline-block;
-        margin: 0 20px 0 0;
+        padding: 0 10px 0;
         vertical-align: middle;
         cursor: pointer;
         transition: background ease-in .1s;
@@ -39,7 +39,7 @@
                 background: inline('assets/vk_header-hover.svg') center no-repeat;
                 background-size: size('assets/vk_header.svg');
                 }
-        }
+            }
 
         &._gh {
             width: width('assets/gh_header.svg');
@@ -51,7 +51,7 @@
                 background: inline('assets/gh_header-hover.svg') center no-repeat;
                 background-size: size('assets/gh_header.svg');
                 }
-        }
+            }
 
         &._in {
             width: width('assets/in_header.svg');
@@ -64,14 +64,13 @@
                 background-size: size('assets/in_header.svg');
                 }
             }
-    }
+        }
 
-    .header-button {
+    .header__button {
         float: right;
-        margin: 0 0 -10px;
         cursor: pointer;
-        size: 40px;
         transition: transform ease-in .2s;
+        size: 40px;
 
         &._clicked {
             position: fixed 25px 10px * *;
@@ -79,7 +78,7 @@
             transform: translateX(5px);
             }
 
-        &._clicked .header-el {
+        &._clicked .header__button-el {
 
             &:first-child {
                 transform: rotate(45deg) translateY(21px) ;
@@ -98,7 +97,7 @@
             }
         }
 
-    .header-el {
+    .header__button-el {
         margin: 0 0 10px;
         border-radius: 2px;
         background: #fff;
@@ -127,24 +126,23 @@
         background: rgba(33, 199, 177, .9);
         }
 
-    .fullscreen-list {
+    .fullscreen__list {
         margin: auto;
         padding: 80px 0 0;
         width: 420px;
         text-align: center;
         }
 
-    .fullscreen-item {
+    .fullscreen__item {
         display: block;
-        margin: 0 0 80px 0;
+        margin: 0 0 80px;
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 46px;
-        font-family: 'BERNIER Regular';
+        font: 46px/1 'BERNIER Regular', Helvetica, Arial;
         }
 
-    .link-text {
+    .fullscreen__link {
         position: relative;
 
         &:before {
