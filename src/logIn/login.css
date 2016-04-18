@@ -1,6 +1,5 @@
 .login-loyout {
-    background: url('assets/background.jpeg') top center no-repeat;
-    background-size: size('./assets/background.jpeg', 3);
+    background: url('assets/background.jpg') top center no-repeat;
     }
 
 .login-wrap {
@@ -166,8 +165,7 @@
     width: 100%;
     color: #fff;
     text-align: center;
-    font-size: 14px;
-    font-family: 'Roboto-Light';
+    font: 14px/1 'Roboto-Light', Helvetica, Arial;
     }
 
 @media (width <= 720px) {

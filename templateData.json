@@ -67,5 +67,28 @@
 				}
 			]
 		}
+	],
+	"works": [
+		{
+			"id": "001",
+			"name": "Сайт школы онлайн образования",
+			"url": "#",
+			"imgUrl": "./assets/siteSchool.png",
+			"imgUrlMin": "./assets/siteSchool_min.png"
+		},
+		{
+			"id": "002",
+			"name": "Сайт студии йоги",
+			"url": "#",
+			"imgUrl": "./assets/siteYoga.png",
+			"imgUrlMin": "./assets/siteYoga_min.png"
+		},
+		{
+			"id": "003",
+			"name": "Сайт студии мебели",
+			"url": "#",
+			"imgUrl": "./assets/siteSofa.png",
+			"imgUrlMin": "./assets/siteSofa_min.png"
+		}
 	]
 }

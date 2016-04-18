@@ -135,11 +135,20 @@
 
     .fullscreen__item {
         display: block;
-        margin: 0 0 80px;
+        padding: 40px 0;
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
         font: 46px/1 'BERNIER Regular', Helvetica, Arial;
+        transition: opacity ease-in .2s;
+
+        &:first-child {
+            padding: 0 0 40px;
+            }
+
+        &:hover {
+            opacity: .6;
+            }
         }
 
     .fullscreen__link {
@@ -152,7 +161,6 @@
             content: '';
             size: 25px 5px;
             }
-
         &:after {
             position: absolute 50% -40px * *;
             display: block;

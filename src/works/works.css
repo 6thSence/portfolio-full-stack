@@ -73,10 +73,10 @@
                         background: #cbccc8;
                         }
                     &:before {
-                        position: absolute 25px * * -45px;
+                        position: absolute 15px * * -45px;
                         }
                     &:after {
-                        position: absolute 25px -45px * *;
+                        position: absolute 15px -45px * *;
                         }
                     }
 
@@ -150,7 +150,6 @@
 .say {
     min-height: 1275px;
     background: url('assets/worksBottomBg.png') bottom no-repeat;
-    background-size: 100% auto;
     }
 
     .say__peopls-wrap {
@@ -212,8 +211,8 @@
         width: 380px;
         min-height: 440px;
         border-radius: 3px;
-        background: url('./assets/bg-attachment.png') 55% 66% no-repeat;
-        background-size: size('./assets/bg-attachment.png', 1.1);
+        background: url('./assets/bg-attachment.png') 55% 65% no-repeat;
+        background-size: size('./assets/bg-attachment.png', 1);
         }
 
         .contact-me__title {

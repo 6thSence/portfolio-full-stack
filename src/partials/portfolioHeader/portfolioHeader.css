@@ -4,9 +4,7 @@
     padding: 150px 0 0;
     min-height: 600px;
     box-sizing: border-box;
-    background: inline('assets/portfolio.svg') center 150px no-repeat,
-        url('assets/background.jpeg') center top no-repeat;
-
+    background: url('./assets/portfolioHeaderBg.jpg') center no-repeat;
 
     &:before {
         display: inline-block;
