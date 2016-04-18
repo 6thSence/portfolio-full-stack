@@ -39,3 +39,41 @@ const stickSidebar = function(){
 }();
 
 document.getElementById('posts-list') && stickSidebar.init();
+
+const scrollToPost = function(){
+    const init = () => {
+        _eventListener();
+    }
+
+    const _scrollToPost = (e) => {
+        const postItems = document.getElementsByClassName('sidebar__post');
+        for (let item in postItems) {
+            if (postItems.hasOwnProperty(item)) {
+                postItems[item].classList.contains('_active') &&
+                    postItems[item].classList.remove('_active');
+            }
+        };
+        e.target.classList.add('_active');
+
+        const postId = e.target.getAttribute('data-postId');
+        const post = document.getElementById(postId);
+        post.scrollIntoView(false);
+    }
+
+    const _eventListener = () => {
+        const postItems = document.getElementsByClassName('sidebar__post');
+
+        for (let item in postItems) {
+            if (postItems.hasOwnProperty(item)) {
+                postItems[item].addEventListener('click', _scrollToPost)
+            }
+        }
+
+    }
+
+    return {
+        init
+    }
+}();
+
+document.getElementById('posts-list') && scrollToPost.init();
