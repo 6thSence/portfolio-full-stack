@@ -2,7 +2,7 @@
     margin: 0;
     padding: 70px 0;
     text-align: center;
-    font: 63px/1 'BERNIER Regular', Helvetica, Arial;
+    font: 63px/1 'BERNIER-Regular', Helvetica, Arial;
     color: #373e42;
 
     &._works {
@@ -56,7 +56,7 @@
 
             .examples__item-title {
                 margin: 0 0 45px;
-                font: 36px/1 'BERNIER Regular', Helvetica, Arial;
+                font: 36px/1 'BERNIER-Regular', Helvetica, Arial;
                 color: #455a64;
                 text-align: center;
                 }
@@ -218,7 +218,7 @@
         .contact-me__title {
             margin: 0 0 38px;
             text-align: center;
-            font: 35px/1 'BERNIER Regular', Helvetica, Arial;
+            font: 35px/1 'BERNIER-Regular', Helvetica, Arial;
             color: #455a64;
             }
 

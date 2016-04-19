@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('./fonts/Roboto-Medium.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('./fonts/Roboto-Light.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'BERNIER-Distressed';
+    src: url('/fonts/bernierdistressed-regular-webfont.eot');
+    src: url('/fonts/bernierdistressed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'BERNIER-Regular';
+    src: url('/fonts/bernierregular-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'BERNIER-Shade';
+    src: url('/fonts/berniershade-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    -webkit-font-smothing: antialiased;
+    font-family: BERNIER-Shade;
+    }
+
+body * {
+    -webkit-font-smothing: antialiased;
+    }

@@ -64,11 +64,10 @@ gulp.task('styles', () => {
 		}),
 		short,
 		assets,
-		cssnano,
 		reporter
 	]
 
-	return gulp.src('./src/**/*/*.css')
+	return gulp.src('./src/**/*.css')
 		.pipe(postcss(processors))
 		.pipe(concat('bundel.min.css'))
 		.pipe(gulp.dest('./static/'));

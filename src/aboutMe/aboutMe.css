@@ -21,7 +21,7 @@
             background: inline('assets/aboutText.svg') center no-repeat;
             background-size: 100% auto;
             text-align: center;
-            font: 63px/200px 'BERNIER Regular', Helvetica, Arial;
+            font: 63px/200px 'BERNIER-Regular', Helvetica, Arial;
             color: #373e42;
             size: 45% 200px;
             }
@@ -63,7 +63,7 @@
                 .about__title-disc {
                     text-align: center;
                     color: #455a64;
-                    font: 35px/1 'BERNIER Regular', Helvetica, Arial;
+                    font: 35px/1 'BERNIER-Regular', Helvetica, Arial;
                     }
                 .about__profile-disc {
                     color: #455a64;
@@ -74,7 +74,7 @@
             width: 220px;
             text-align: center;
             margin: 0 auto 35px;
-            font: 35px/1 'BERNIER Regular', Helvetica, Arial;
+            font: 35px/1 'BERNIER-Regular', Helvetica, Arial;
             color: #455a64;
             position:relative;
 
@@ -137,7 +137,7 @@
             .contacts__title {
                 position: relative;
                 color: #373e42;
-                font: 35px/1 'BERNIER Regular', Helvetica, Arial;
+                font: 35px/1 'BERNIER-Regular', Helvetica, Arial;
 
                 &:before, &:after {
                     content: '';
