@@ -34,7 +34,6 @@
             height: height('assets/vk_header.svg');
             background: inline('assets/vk_header.svg') center no-repeat;
             background-size: size('assets/vk_header.svg');
-
             &:hover {
                 background: inline('assets/vk_header-hover.svg') center no-repeat;
                 background-size: size('assets/vk_header.svg');
@@ -46,7 +45,6 @@
             height: height('assets/gh_header.svg');
             background: inline('assets/gh_header.svg') center no-repeat;
             background-size: size('assets/gh_header.svg');
-
             &:hover {
                 background: inline('assets/gh_header-hover.svg') center no-repeat;
                 background-size: size('assets/gh_header.svg');
@@ -58,7 +56,6 @@
             height: height('assets/in_header.svg');
             background: inline('assets/in_header.svg') center no-repeat;
             background-size: size('assets/in_header.svg');
-
             &:hover {
                 background: inline('assets/in_header-hover.svg') center no-repeat;
                 background-size: size('assets/in_header.svg');
@@ -109,6 +106,7 @@
         from {
             opacity: 0;
             }
+
         to {
             opacity: 1;
             }

@@ -49,7 +49,6 @@
             &._vk {
                 background: #fff inline('assets/vk_footer.svg') center no-repeat;
                 background-size: size('assets/vk_footer.svg');
-
                 &:hover {
                     opacity: 1;
                     }
@@ -58,7 +57,6 @@
             &._gh {
                 background: #fff inline('assets/gh_footer.svg') center no-repeat;
                 background-size: size('assets/gh_footer.svg');
-
                 &:hover {
                     opacity: 1;
                     }
@@ -67,7 +65,6 @@
             &._in {
                 background: #fff inline('assets/in_footer.svg') center no-repeat;
                 background-size: size('assets/in_footer.svg');
-
                 &:hover {
                     opacity: 1;
                     }

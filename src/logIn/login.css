@@ -48,7 +48,7 @@
     z-index: 1;
     overflow: hidden;
     box-sizing: border-box;
-    font-family: 'Roboto-Medium', Helvetica, Arial;
+    font: 16px/1 'Roboto-Medium', Helvetica, Arial;
     position: absolute 50% * * 50%;
     padding: 40px 60px 0;
     border-radius: 10px;
@@ -78,10 +78,9 @@
 
         .auth__info-desc {
             margin: 0 0 35px;
-            font-size: 16px;
+            font: 16px/1 Roboto-Regular, Helvetica, Arial;;
             color: #475a63;
             opacity: .8;
-            font-family: Roboto-Regular, Helvetica, Arial;
             }
 
     .auth__socials {
