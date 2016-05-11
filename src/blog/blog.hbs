@@ -2,41 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Блог</title>
-    <link rel="stylesheet" href="./bundel.min.css">
+    <title>Мои работы</title>
+    <link rel="stylesheet" href="bundel.min.css">
 </head>
 <body>
-    <div class="blog-wrap">
-        {{> header addClass=portfolio.blog}}
-        <div class="blog-content">
-            <div class="blog__posts-wrap">
-                {{> post postId="post001"}}
-                {{> post postId="post002"}}
-                {{> post postId="post003"}}
-                {{> post postId="post004"}}
-            </div>
-            <aside class="sidebar">
-                <div class="sidebar__info">
-                    <div class="sidebar__photo">
-                        <img src="./assets/photo.png" alt="">
-                    </div>
-                    <div class="sidebar__title-wrap">
-                        <span class="sidebar__title">Блог</span>
-                    </div>
-                    <div class="sidebar__desc">Статьи, которые я написал</div>
-                </div>
-                <div class="sidebar__posts" id="posts-list">
-                    <a class="sidebar__post _active" data-postId="post001">Самое важное в Sass</a>
-                    <a class="sidebar__post" data-postId="post002">Приемы в верске, без которых не обходится ни один сайт</a>
-                    <a class="sidebar__post" data-postId="post003">Самый необходимый набор плагинов Gulp</a>
-                    <a class="sidebar__post" data-postId="post004">Почему я выбрал Jade</a>
-                </div>
-            </aside>
-        </div>
-    </div>
 
-    {{> footer addClass=footer.blog}}
+{{> portfolioHeader addClass=portfolio.blog}}
 
-    <script src="./scripts.js"></script>
+<section class="blog">
+
+</section>
+
+{{> footer addClass=footer.blog}}
+
+<script src="./scripts.js"></script>
 </body>
 </html>

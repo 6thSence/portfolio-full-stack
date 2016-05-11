@@ -4,12 +4,6 @@
     padding: 25px 20px 0;
     size: 100% 92px;
 
-    &._blog {
-        position: fixed 0 0 *;
-        z-index: 1;
-        background: linear-gradient(to right, #84aead 0%, #81aaab 25%, #7aa8ab 50%, #639fa4 100%);
-        }
-
     &:after {
         display: blog;
         clear: both;

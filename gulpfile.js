@@ -78,6 +78,7 @@ gulp.task('assets', () => {
 	 './src/blog/assets/**.*',
 	 './src/aboutMe/assets/**.*',
 	 './src/works/assets/**.*',
+	 './src/partials/portfolioHeader/assets/**.*',
 	 '!./src/**/*.svg'])
 		.pipe(gulp.dest('./static/assets'));
 });

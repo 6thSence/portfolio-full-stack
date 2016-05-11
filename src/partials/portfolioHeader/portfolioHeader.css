@@ -4,7 +4,6 @@
     padding: 150px 0 0;
     min-height: 600px;
     box-sizing: border-box;
-    background: url('./assets/portfolioHeaderBg.jpg') center no-repeat;
 
     &:before {
         display: inline-block;
@@ -29,10 +28,28 @@
          transform: translateX(50%);
          }
 
+    &._work {
+        background: url('./assets/portfolioHeaderBg.jpg') center no-repeat;
+        }
+    &._work .portfolio__info-disc._blog {
+        display: none;
+        }
     &._work:after {
         border-right: solid 900px #faf8f0;
         border-left: solid 900px #faf8f0;
         }
+
+    &._blog {
+        background: url('./assets/bgForBlog.jpg') center no-repeat;
+        }
+    &._blog .portfolio__info-disc._work,
+    &._blog .portfolio__info-name._work{
+         display: none;
+         }
+    &._blog:after{
+         border-right: solid 900px #faf8f0;
+         border-left: solid 900px #faf8f0;
+         }
     }
 
     .portfolio-person {
