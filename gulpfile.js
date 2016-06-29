@@ -65,7 +65,7 @@ gulp.task('styles', () => {
 		short,
 		assets,
 		reporter
-	]
+	];
 
 	return gulp.src('./src/**/*.css')
 		.pipe(postcss(processors))
